@@ -1,9 +1,10 @@
 import React from 'react';
+import DetailsData from '../DetailsData/DetailsData';
 
 const Home = () => {
     return (
         <div>
-            <h5>this is home</h5>
+            <DetailsData></DetailsData>
         </div>
     );
 };
