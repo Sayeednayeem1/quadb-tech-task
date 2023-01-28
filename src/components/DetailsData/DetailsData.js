@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Booking from '../Booking/Booking';
 import DataDetail from './DataDetail';
+import DetailsModal from './DetailsModal';
 
 const DetailsData = () => {
     const [details, setDetails] = useState([]);
+
+    // todo state to show data in Booking Modal
+
+    const [modalData, setModalData] = useState(null);
 
     // todo fetch data from the api
 
@@ -22,13 +27,24 @@ const DetailsData = () => {
                     details.map((detail, x) => <DataDetail
                         key={x}
                         detail={detail}
-                        details={details}
-                        setDetails={setDetails}
+                        setModalData={setModalData}
                     >
                     </DataDetail>)
                 }
             </div>
-            <Booking></Booking>
+            <div>
+                {modalData &&
+                    <Booking
+                        modalData={modalData}
+                    ></Booking>}
+            </div>
+            <div>
+                {modalData &&
+                    <DetailsModal
+                        modalData={modalData}
+                    ></DetailsModal>
+                }
+            </div>
         </div>
     );
 };
