@@ -21,7 +21,7 @@ const DetailsData = () => {
 
     return (
         <div className='container mx-auto'>
-            <h1 className='text-center text-2xl font-bold mt-12 mb-8'>All Series List</h1>
+            <h1 className='text-center text-4xl font-bold mt-16 mb-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>All Series List</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {
                     details.map((detail, x) => <DataDetail

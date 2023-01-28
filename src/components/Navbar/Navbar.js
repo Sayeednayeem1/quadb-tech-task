@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Time from '../Time/Time';
 
 const Navbar = () => {
 
     let navItems = <>
-        <li><Link to='/'>Home</Link></li>
+        <li className='text-2xl font-bold'><Link to='/'>Home</Link></li>
     </>
 
     return (
-        <div>
+        <div className='container mx-auto'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -19,7 +20,7 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <a href='/' className="btn btn-ghost normal-case text-xl">Abu Sayed</a>
+                    <a href='/' className="btn bg-gradient-to-r from-violet-500 to-fuchsia-500 border-none">Abu Sayed</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -27,7 +28,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href='/' className="btn">Get started</a>
+                    <a href='/' className="btn bg-gradient-to-r from-violet-500 to-fuchsia-500 border-none"><Time></Time></a>
                 </div>
             </div>
         </div>
