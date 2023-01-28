@@ -3,6 +3,9 @@ import React from 'react';
 const DataDetail = ({ detail, setModalData }) => {
     const { image, name } = detail.show;
     console.log(detail.show);
+
+    // todo this is details modal
+
     return (
         <div>
             <div className="card card-compact shadow-xl">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DetailsModal = ({ modalData }) => {
-    const { name, image, schedule, summary, language, genres } = modalData.show;
+    const { name, image, summary, language, genres } = modalData.show;
     return (
         <div>
             <input type="checkbox" id="details-modal" className="modal-toggle" />

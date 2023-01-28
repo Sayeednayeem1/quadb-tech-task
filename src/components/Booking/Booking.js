@@ -1,7 +1,10 @@
 import React from 'react';
 
 const Booking = ({ modalData }) => {
-    const { name, image, schedule, summary } = modalData.show;
+    const { name} = modalData.show;
+
+    // todo this is booking modal
+
     return (
         <div>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />

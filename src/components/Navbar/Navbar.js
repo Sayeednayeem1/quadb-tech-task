@@ -4,6 +4,8 @@ import Time from '../Time/Time';
 
 const Navbar = () => {
 
+    // todo this is navbar
+
     let navItems = <>
         <li className='text-2xl font-bold text-white'><Link to='/'>Home</Link></li>
     </>
