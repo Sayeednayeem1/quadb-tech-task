@@ -8,7 +8,7 @@ const Booking = ({ modalData }) => {
             <div className="modal">
                 <div className="modal-box relative">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h1 className='text-2xl font-bold text-orange-600'>{name}</h1>
+                    <h1 className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>{name}</h1>
                     <div>
                         <div className="form-control">
                             <label className="label">

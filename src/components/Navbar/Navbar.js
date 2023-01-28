@@ -5,12 +5,12 @@ import Time from '../Time/Time';
 const Navbar = () => {
 
     let navItems = <>
-        <li className='text-2xl font-bold'><Link to='/'>Home</Link></li>
+        <li className='text-2xl font-bold text-white'><Link to='/'>Home</Link></li>
     </>
 
     return (
-        <div className='container mx-auto'>
-            <div className="navbar bg-base-100">
+        <div className=''>
+            <div className="navbar bg-gradient-to-r from-violet-500 to-fuchsia-500m py-4">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <a href='/' className="btn bg-gradient-to-r from-violet-500 to-fuchsia-500 border-none">Abu Sayed</a>
+                    <a href='/' className="text-2xl font bold text-white">Abu Sayed</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
